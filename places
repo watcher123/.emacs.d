@@ -1,12 +1,17 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/SOFT/Emacs/.emacs.d/site-lisp/init-modeline.el" . 1740)
- ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-window.el" . 424)
- ("c:/SOFT/Emacs/.emacs.d/recentf" . 1518)
+(("c:/SOFT/Emacs/.emacs.d/site-lisp/init-window.el" . 424)
+ ("c:/SOFT/Emacs/.emacs.d/README.md" . 642)
+ ("c:/SOFT/Emacs/.emacs.d/recentf" . 1561)
+ ("c:/SOFT/Emacs/.emacs.d/"
+  (dired-filename . "c:/SOFT/Emacs/.emacs.d/README.md"))
+ ("c:/SOFT/Emacs/.emacs.d/site-lisp/"
+  (dired-filename . "c:/SOFT/Emacs/.emacs.d/site-lisp/.."))
+ ("c:/SOFT/Emacs/"
+  (dired-filename . "c:/SOFT/Emacs/.emacs.d"))
+ ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-modeline.el" . 1740)
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-keybindings.el" . 909)
  ("c:/SOFT/Emacs/.emacs.d/elpa/"
   (dired-filename . "c:/SOFT/Emacs/.emacs.d/elpa/winum-20171028.702"))
- ("c:/SOFT/Emacs/.emacs.d/site-lisp/"
-  (dired-filename . "c:/SOFT/Emacs/.emacs.d/site-lisp/init-elpa.el"))
  ("c:/SOFT/Emacs/.emacs.d/elpa/winum-20171028.702/winum-autoloads.el" . 4442)
  ("c:/SOFT/Emacs/.emacs.d/elpa/winum-20171028.702/"
   (dired-filename . "c:/SOFT/Emacs/.emacs.d/elpa/winum-20171028.702/.."))
@@ -18,8 +23,6 @@
  ("c:/SOFT/Emacs/.emacs.d/elpa/evil-20180517.1300/evil-autoloads.el" . 3767)
  ("c:/SOFT/Emacs/.emacs.d/elpa/goto-chg-20180105.1033/goto-chg-autoloads.el" . 1995)
  ("c:/SOFT/Emacs/.emacs.d/elpa/general-20180628.1112/general-autoloads.el" . 18328)
- ("c:/SOFT/Emacs/.emacs.d/"
-  (dired-filename . "c:/SOFT/Emacs/.emacs.d/site-lisp"))
  ("c:/SOFT/Emacs/.emacs.d/elpa/which-key-3.3.0/which-key-autoloads.el" . 5333)
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-better-edit.el" . 417)
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-ivy.el" . 806)
@@ -29,8 +32,6 @@
  ("c:/SOFT/Emacs/.emacs.d/elpa/company-0.9.6/company-autoloads.el" . 12458)
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-startup.el" . 785)
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-functions.el" . 789)
- ("c:/SOFT/Emacs/"
-  (dired-filename . "c:/SOFT/Emacs/.emacs.d"))
  ("c:/SOFT/Emacs/.emacs.d/site-lisp/init-theme.el" . 190)
  ("c:/SOFT/Emacs/.emacs.d/elpa/color-theme-sanityinc-tomorrow-20180705.452/color-theme-sanityinc-tomorrow-autoloads.el" . 1669)
  ("c:/SOFT/Emacs/.emacs.d/cnfonts/v4/profile2.el" . 5005)
