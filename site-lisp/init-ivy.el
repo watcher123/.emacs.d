@@ -1,3 +1,8 @@
+(use-package smex
+  :ensure t
+  :config
+  (smex-initialize))
+
 (use-package counsel
   :bind
   (("C-c C-r" . ivy-resume)
@@ -9,7 +14,7 @@
    ("C-h f" . counsel-describe-function)
    ("C-h v" . counsel-describe-variable)
    ("C-c y" . counsel-yank-pop))
-   ("\C-s" .  swiper)
+  ("\C-s" .  swiper)
   )
 
 (use-package swiper

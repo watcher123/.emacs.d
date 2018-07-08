@@ -13,9 +13,12 @@
  "ad"  'dired
  "b"   '(:ignore t :which-key "Buffer")
  "bb"  'ivy-switch-buffer
+ "e"   '(:ignore t :which-key "Emacs")
+ "eb"  'eval-buffer
  "f" '(:ignore t :which-key "Files")
  "ff"  'counsel-find-file
  "fr"  'counsel-recentf
+ "fs"  'save-buffer
  "q"   '(:ignore t :which-key "Quit")
  "qq"   'save-buffers-kill-terminal 
  "w"   '(:ignore t :which-key "Window")
@@ -33,5 +36,13 @@
  "7"   'winum-select-window-7
  "8"   'winum-select-window-8
  "9"   'winum-select-window-9
+ "h"   '(:ignore t :which-key "Help")
+ "hv"  'counsel-describe-variable
+ "hf"  'counsel-describe-function
+ "hk"  'describe-key
+ "hm"  'describe-mode
+ "z"   '(:ignore t :which-key "Zoom")
+ "z="  'cnfonts-increase-fontsize
+ "z-"  'cnfonts-decrease-fontsize
  )                            
 (provide 'init-keybindings)
