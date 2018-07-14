@@ -43,6 +43,14 @@
     (w32-send-sys-command 61488)))
 (add-hook 'window-setup-hook 'maximize-frame t)
 
+(setq default-directory "~/workspace");; 设置默认文件路径
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+(setq auto-save-list-file-prefix nil)
 (provide 'init-startup)
 
 

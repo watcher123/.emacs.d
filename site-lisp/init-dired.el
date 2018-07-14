@@ -12,4 +12,10 @@
   (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))  ;; 延迟加载
   )
+
+(use-package dired+
+  :ensure nil
+  :commands (global-dired-hide-details-mode)
+  :init
+  (global-dired-hide-details-mode -1))
 (provide 'init-dired)

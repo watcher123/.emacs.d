@@ -21,6 +21,10 @@
 
 (use-package general :ensure t)
 
+(use-package bind-map
+  :defer t
+  :ensure t)
+  
 (provide 'init-elpa)
 
 

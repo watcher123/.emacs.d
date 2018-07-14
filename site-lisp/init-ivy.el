@@ -1,7 +1,9 @@
 (use-package smex
   :ensure t
   :config
-  (smex-initialize))
+  (smex-initialize)
+  (setq smex-save-file (expand-file-name "smex" watcher-cache-directory)))
+  
 
 (use-package counsel
   :bind

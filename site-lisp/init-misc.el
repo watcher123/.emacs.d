@@ -32,36 +32,51 @@
   :config
   (popwin-mode 1))
 
+(use-package bookmark                   ; Bookmarks for Emacs buffers
+  :bind (("C-c f b" . list-bookmarks))
+  ;; Save bookmarks immediately after a bookmark was added
+  :config (setq bookmark-save-flag 1
+		bookmark-default-file (expand-file-name "bookmarks" watcher-cache-directory)))
+    
 (use-package which-key
   :ensure t
   :defer 2
   :diminish which-key-mode
   :config
-  (which-key-mode)
-  (which-key-setup-side-window-bottom)
-  ;; simple then alphabetic order.
-  (setq which-key-sort-order 'which-key-prefix-then-key-order)
-  (setq which-key-popup-type 'side-window
-        which-key-side-window-max-height 0.3
-        which-key-side-window-max-width 0.5
-        which-key-idle-delay 0.3
-        which-key-min-display-lines 7)
-  ;; key description for C-x
-  (which-key-add-key-based-replacements
-    "C-x RET" "coding system -input"
-    "C-x 4"   "Other Window"
-    "C-x 5"   "Frame"
-    "C-x 6"   "2C"
-    "C-x @"   "event"
-    "C-x 8"   "special char"
-    "C-x a"   "abbrev"
-    "C-x n"   "narrow"
-    "C-x r"   "rectangle"
-    "C-x v"   "version control"
-    "C-c &"   "yas"
-    "C-c @"   "hide-show"
-    "M-SPC h" "info"
-    "M-SPC g" "grep"
-    "M-SPC M-s" "occur"))
+  (progn
+    (setq which-key-special-keys nil
+	  which-key-use-C-h-for-paging t
+	  which-key-prevent-C-h-from-cycling t
+	  which-key-echo-keystrokes 0.02
+	  which-key-max-description-length 32
+	  which-key-sort-order 'which-key-key-order-alpha
+	  which-key-idle-delay 0.4
+	  which-key-allow-evil-operators t)
+
+    (add-to-list 'which-key-description-replacement-alist
+		 (cons (rx bos "cb" (* (not (any "/"))) "/" (group (+ nonl)) eos) "\\1"))
+    (which-key-add-key-based-replacements
+      "SPC a"   "appliction"
+      "SPC b"   "buffers"
+      "SPC f"   "files"
+      "SPC f e" "emacs"
+      "SPC f b" "bookmarks"
+      "SPC p"   "projects"
+      "SPC h"   "help"
+      "SPC w"   "window"
+      "SPC SPC" "M-x"
+      "SPC q"   "quit "
+      "SPC g"   "git"
+      "SPC o"   "watcher"
+      "SPC v"   "visual"
+      "SPC x"   "text"
+      "SPC t"   "toggle"
+      "SPC m"   '("major-mode-cmd" . "Major mode commands")
+      "SPC z"   "zoom"
+      )
+    (which-key-mode)
+    ;; (which-key-setup-side-window-right-bottom)
+    )
+  )
 
 (provide 'init-misc)
